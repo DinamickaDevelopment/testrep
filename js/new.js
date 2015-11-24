@@ -1,17 +1,5 @@
-
-$(document).ready(function(){
-
-
-
-    $('#counter').countdown(
-        {
-            timestamp: (new Date()).getTime() + 13 * 23 * 62 * 60 * 1000
-	});
-
-    
-
-    /*background*/
-        var windowWidth, windowHeight, containerHeight,
+﻿$(document).ready(function () {
+    var windowWidth, windowHeight, containerHeight,
 		container = $('#slide-container'),
 		slidingBox = $('#sliding-box');
 
@@ -30,7 +18,8 @@ $(document).ready(function(){
         slidingBox.children('section').css('height', containerHeight);
     }
 
-
-
+ 
 });
+
+
 
