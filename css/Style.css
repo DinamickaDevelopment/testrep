@@ -227,7 +227,7 @@ div.countDays span.Days {margin-left:6px;}
 /*counter -end*/
 .navbar-brand {height: 65px;}
 .pading-63-20{padding:0 20px}
-
+.soon,.tagline{text-align:center;}
 }
 @media(min-width:600px){
 .mobcenter{margin:0 auto;width:65%;}
@@ -238,6 +238,8 @@ div.countDays span.Days {margin-left:6px;}
 .position {width: 35px;height: 72px;}
 .countDays .position:first-child span{margin-left: 13px;}
 div.countDays span.Days {margin-left: 19px;}
+.soon,.tagline{text-align:left;}
+
 }
 @media(min-width:993px){
     /*html,body{height: 100%;}*/
