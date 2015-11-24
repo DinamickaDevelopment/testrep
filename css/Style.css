@@ -92,9 +92,7 @@ body{
     margin-left: 2px;
 }
 
-div.countDays span.Days {
-    margin-left: 19px;
-}
+
 
 /*Main Background*/
 
@@ -125,13 +123,11 @@ div.countDays span.Days {
     font-size: 24px !important;
     color: white;
     padding: 4% !important;
-    height: 120px !important;
 }
 
 div.timer_cover {
     float: right !important;
     background-color: rgba(0,145,199,0.6);
-    padding: 62px 0;
 }
 
 div.form_cover {
@@ -213,38 +209,49 @@ div.form_cover {
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
-
+        html,body,.fullheight {height: 100%;}
 @media(min-width:320px){
-html,body{height: 860px;}
-div.timer_cover {height: auto !important; padding-left:0;}
+/*html,body{height: 860px;}*/
+div.timer_cover {height: auto !important; padding-left:0;padding:10px 0;}
 div.form_cover{height: auto !important;}
 .mobcenter{margin:0 auto;width:90%;}
-#mc_embed_signup {margin:62px 0}
-#mc_embed_signup .button{margin:10px auto;display:block;}
+#mc_embed_signup {margin:20px 0}
+#mc_embed_signup .button{margin:0 auto;display:block;}
 /*counter*/
-#counter {width: 295px;font-size:7px;}
-.countDays, .countHours, .countMinutes, .countSeconds {width: 56px;height: 100px;}
+#counter {width: 240px;font-size:7px;margin:0 auto;}
+.countDays, .countHours, .countMinutes, .countSeconds {width: 40px;height: 62px;}
 .points {width: 19px;margin-top: 13px;}
-.position {width: 28px;height: 48px;}
+.position {width: 20px;height: 40px;}
+.countDays .position:first-child span{margin-left: 6px;}
+div.countDays span.Days {margin-left:6px;}
+/*counter -end*/
+.navbar-brand {height: 65px;}
+.pading-63-20{padding:0 20px}
+
 }
 @media(min-width:600px){
 .mobcenter{margin:0 auto;width:65%;}
 /*counter*/
-#counter {width: 390px;font-size:14px;}
+#counter {width: 390px;font-size:14px; margin:0;}
 .countDays, .countHours, .countMinutes, .countSeconds {width: 70px;height: 138px;}
 .points {width: 34px;margin-top: 32px;}
 .position {width: 35px;height: 72px;}
+.countDays .position:first-child span{margin-left: 13px;}
+div.countDays span.Days {margin-left: 19px;}
 }
 @media(min-width:993px){
-    html,body{height: 100%;}
-div.timer_cover {height: 65% !important; padding-left:7.7%;}
+    /*html,body{height: 100%;}*/
+div.timer_cover {height: 65% !important;padding:62px 0 0 7.7%;}
 div.form_cover{height: 35% !important;}
 .mobcenter{margin:0;width:auto;}
 #mc_embed_signup {margin:62px 0 0 0;}
-#mc_embed_signup .button{margin:0;display:inline-block} 
+#mc_embed_signup .button{margin:0 18px;display:inline-block} 
+.navbar-brand {height: 120px;}
+
+.pading-63-20{padding:0 63px;}
 
 }
 
-@media(min-height:801px){    
+/*@media(min-height:801px){    
 html,body,.fullheight {height: 100%!important;}
-}
+}*/
