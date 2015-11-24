@@ -23,7 +23,10 @@
     src: url('../font/proximanova-light.otf') format('opentype');
 }
 
-
+/*NEWnew*/
+html,body,.fullheight {
+    height: 100%;
+}/*Fullheight page withuot JS*/
 /*counter*/
 #counter {
     width: 390px;
@@ -32,7 +35,6 @@
     color: white;
     /*float: right;*/
 }
-
 .countDays, .countHours, .countMinutes, .countSeconds {
     float: left;
     width: 70px;
@@ -91,9 +93,8 @@ div.countDays span.Days {
 
 .slide-container {
     width: 100%;
-    height: 500px;
+    height: 100%;
     position: relative;
-    overflow: hidden;
 }
 
 .sliding-box {
@@ -103,12 +104,11 @@ div.countDays span.Days {
     left: 0;
     top: 0;
     background: #fff;
-    overflow: hidden;
 }
 
     .sliding-box > section {
         width: 100%;
-        height: 300px;
+        height: 100%;
         position: relative;
     }
 
@@ -159,12 +159,62 @@ div.form_cover {
 /*mailChimp*/
 .first_Line{
     font-family: proximanova-semibold;
-        font-weight:600;
 }
 .second_Line{
     font-family:proximanovacond-light;
-    font-weight:100;
 }
 .countDays .position:first-child span{
         margin-left: 13px;
 }
+/*Begin MailChimp Signup Form*/
+        #mc_embed_signup {
+            clear: left;
+            font: 14px Helvetica,Arial,sans-serif;
+            width:100%
+        }
+
+        #mc-embedded-subscribe {
+            background-color: #0091c7 !important;
+            border-radius: 8px!important;
+        }
+        #mc_embed_signup .mc-field-group input{
+                 border-radius: 8px;
+                 display: block;
+                 width: 100%;
+                 padding: 8px 0;
+                 text-indent: 2%;
+                 border: 1px solid #999;
+            -webkit-appearance: none;
+        }
+        #mc_embed_signup input:focus {
+    border-color: #999 !important;
+}
+        #mc_embed_signup .button{
+            width:90px!important;
+            padding:0!important;
+                clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+        
+        #mc_embed_signup_scroll h2{
+            color:white;
+            font-size:20px;
+            line-height:24px;
+            letter-spacing:0;
+        }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
