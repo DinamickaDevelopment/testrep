@@ -24,14 +24,20 @@
 }
 
 /*NEWnew*/
-html,body,.fullheight {
-    height: 100%;
-}/*Fullheight page withuot JS*/
+body{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.fullheight{
+    height:100%;
+}
 /*counter*/
 #counter {
     width: 390px;
     height: 100px;
-    font-size: 60px;
+    font-size:14px;
     color: white;
     /*float: right;*/
 }
@@ -48,7 +54,7 @@ html,body,.fullheight {
     margin: 0;
     margin-top: 32px;
     font-family: proximanova-regular;
-    font-size: 44px;
+    font-size: 3.143em;
     font-weight: bold;
     text-align: center;
     line-height: 31px;
@@ -65,6 +71,7 @@ html,body,.fullheight {
 
 .digit {
     position: absolute;
+        font-size: 4.286em;
     top: 0;
     left: 0;
 }
@@ -72,7 +79,7 @@ html,body,.fullheight {
 .boxName {
     float: left;
     width: 67px;
-    font-size: 16px;
+    font-size: 1.143em;
     color: white;
     font-family: proximanova-regular;
 }
@@ -111,16 +118,6 @@ div.countDays span.Days {
         height: 100%;
         position: relative;
     }
-
-
-
-.sect-07 {
-    background-image: url('../img/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-}
-
 /*-----------------logo--------------*/
 .navbar-brand {
     font-family: proximanova-bold;
@@ -134,27 +131,25 @@ div.countDays span.Days {
 div.timer_cover {
     float: right !important;
     background-color: rgba(0,145,199,0.6);
-    height: 65% !important;
-    padding: 0 0 0 105px !important;
+    padding: 62px 0;
 }
 
 div.form_cover {
     float: right !important;
     background-color: rgba(0,0,0,0.6);
-    height: 35% !important;
     clear: both;
 }
 
 .tagline {
     color: white;
     font-family: proximanova-regular;
-    font-size: 36px;
+    font-size: 2.571em;
 }
 
 .soon {
     color: white;
     font-family: proximanova-light;
-    font-size: 28px;
+    font-size: 2em;
 }
 /*mailChimp*/
 .first_Line{
@@ -170,7 +165,7 @@ div.form_cover {
         #mc_embed_signup {
             clear: left;
             font: 14px Helvetica,Arial,sans-serif;
-            width:100%
+            width:100%;            
         }
 
         #mc-embedded-subscribe {
@@ -181,6 +176,7 @@ div.form_cover {
                  border-radius: 8px;
                  display: block;
                  width: 100%;
+                 height:42px;
                  padding: 8px 0;
                  text-indent: 2%;
                  border: 1px solid #999;
@@ -198,12 +194,10 @@ div.form_cover {
     border-radius: 4px;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
     font-size: 15px;
     font-weight: bold;
-    height: 32px;
+    height: 40px;
     line-height: 32px;
-    margin: 0 5px 10px 0;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
@@ -218,12 +212,39 @@ div.form_cover {
         }
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        .verticalAligne {
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+
+@media(min-width:320px){
+html,body{height: 860px;}
+div.timer_cover {height: auto !important; padding-left:0;}
+div.form_cover{height: auto !important;}
+.mobcenter{margin:0 auto;width:90%;}
+#mc_embed_signup {margin:62px 0}
+#mc_embed_signup .button{margin:10px auto;display:block;}
+/*counter*/
+#counter {width: 295px;font-size:7px;}
+.countDays, .countHours, .countMinutes, .countSeconds {width: 56px;height: 100px;}
+.points {width: 19px;margin-top: 13px;}
+.position {width: 28px;height: 48px;}
+}
+@media(min-width:600px){
+.mobcenter{margin:0 auto;width:65%;}
+/*counter*/
+#counter {width: 390px;font-size:14px;}
+.countDays, .countHours, .countMinutes, .countSeconds {width: 70px;height: 138px;}
+.points {width: 34px;margin-top: 32px;}
+.position {width: 35px;height: 72px;}
+}
+@media(min-width:993px){
+    html,body{height: 100%;}
+div.timer_cover {height: 65% !important; padding-left:7.7%;}
+div.form_cover{height: 35% !important;}
+.mobcenter{margin:0;width:auto;}
+#mc_embed_signup {margin:62px 0 0 0;}
+#mc_embed_signup .button{margin:0;display:inline-block} 
+
+}
+
+@media(min-height:801px){    
+html,body,.fullheight {height: 100%!important;}
 }
