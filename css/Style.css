@@ -223,11 +223,12 @@ div.form_cover{height: auto !important;}
 .points {width: 19px;margin-top: 13px;}
 .position {width: 20px;height: 40px;}
 .countDays .position:first-child span{margin-left: 6px;}
-div.countDays span.Days {margin-left:6px;}
+div.countDays span.Days {margin-left:11px;}
 /*counter -end*/
 .navbar-brand {height: 65px;}
 .pading-63-20{padding:0 20px}
 .soon,.tagline{text-align:center;}
+        #mc_embed_signup_scroll h2{font-size:18px}
 }
 @media(min-width:600px){
 .mobcenter{margin:0 auto;width:65%;}
@@ -239,6 +240,7 @@ div.countDays span.Days {margin-left:6px;}
 .countDays .position:first-child span{margin-left: 13px;}
 div.countDays span.Days {margin-left: 19px;}
 .soon,.tagline{text-align:left;}
+#mc_embed_signup_scroll h2{font-size:20px}
 
 }
 @media(min-width:993px){
