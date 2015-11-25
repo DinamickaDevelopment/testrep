@@ -39,7 +39,6 @@ body{
     height: 100px;
     font-size:14px;
     color: white;
-    /*float: right;*/
 }
 .countDays, .countHours, .countMinutes, .countSeconds {
     float: left;
@@ -117,14 +116,73 @@ body{
         position: relative;
     }
 /*-----------------logo--------------*/
-.navbar-brand {
+        .card {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; 
+            cursor:pointer;
+        }
+
+        .back, .front {
+            position: absolute;
+            width: 142px;
+            height: 55px;
+            -moz-transition: all .8s;
+            -o-transition: all .8s;
+            -webkit-transition: all .8s;
+            transition: all .8s;
+        }
+
+.back {
+
+    background-image: url('../img/fuse-logos_blue_white.png');
+    background-repeat: no-repeat;
+     background-size: contain;
+}
+
+.front {
+    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
+    background-image: url('../img/fuse-logos_blue_white_reverse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -moz-transform: rotate3d(0,1,0, 180deg);
+    -ms-transform: rotate3d(0,1,0, 180deg);
+    -o-transform: rotate3d(0,1,0, 180deg);
+    -webkit-transform: rotate3d(0,1,0, 180deg);
+    transform: rotate3d(0,1,0, 180deg);
+}
+
+        .card:hover .back {
+            -moz-transform: rotate3d(0,1,0, 180deg);
+            -ms-transform: rotate3d(0,1,0, 180deg);
+            -o-transform: rotate3d(0,1,0, 180deg);
+            -webkit-transform: rotate3d(0,1,0, 180deg);
+            transform: rotate3d(0,1,0, 180deg);
+        }
+
+        .card:hover .front {
+            -moz-transform: rotate3d(0,1,0, 0deg);
+            -ms-transform: rotate3d(0,1,0, 0deg);
+            -o-transform: rotate3d(0,1,0, 0deg);
+            -webkit-transform: rotate3d(0,1,0, 0deg);
+            transform: rotate3d(0,1,0, 0deg);
+        }
+
+        .backface .back, .backface .front {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+/*.navbar-brand {
+    background-image: url('../img/fuse-logos_blue_white.png');
+    background-repeat:no-repeat;
     font-family: proximanova-bold;
     text-shadow: none !important;
     font-size: 24px !important;
     color: white;
-    padding: 4% !important;
-}
-
+    width: 11%;
+    background-size: contain;
+        margin: 3%;
+}*/
 div.timer_cover {
     float: right !important;
     background-color: rgba(0,145,199,0.6);
@@ -135,17 +193,34 @@ div.form_cover {
     background-color: rgba(0,0,0,0.6);
     clear: both;
 }
+.social{
+position:relative;
+}
 
+.tweet{
+width:30px;
+    position: absolute;
+     /*left: 80%;*/ 
+    right: 10%;
+    top: 31%;
+
+}
 .tagline {
     color: white;
     font-family: proximanova-regular;
     font-size: 2.571em;
+    /*width:165px;*/
+    /*float:left;*/
+        text-align: left;
+    clear: both;
 }
 
 .soon {
     color: white;
     font-family: proximanova-light;
     font-size: 2em;
+            clear: both;
+
 }
 /*mailChimp*/
 .first_Line{
