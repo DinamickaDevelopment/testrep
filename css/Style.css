@@ -181,7 +181,7 @@ div.form_cover {
         #mc_embed_signup input:focus {
     border-color: #999 !important;
 }
-        #mc_embed_signup .button{
+        #mc_embed_signup .button,#MSGbtn{
             width:90px!important;
             padding:0!important;
                 clear: both;
@@ -206,10 +206,44 @@ div.form_cover {
             line-height:24px;
             letter-spacing:0;
         }
+        .err{border:2px solid #FF2E2E!important;color:#FF2E2E}
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
         html,body,.fullheight {height: 100%;}
+/*Modul window classes*/
+#Maillayer{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+.MSG-box {
+    width: 50%;
+    height: 30%;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    transform: translateY(-60%);
+}
+#MSG,#MSGtitle{
+    color: white;
+    font-family: proximanova-regular;
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+}
+#MSG{font-size:1.429em;}
+#MSGtitle{font-size:2.571em;}
+#MSGbtn{line-height:40px;background-color: #0091c7;margin:0 auto; }
 @media(min-width:320px){
 /*html,body{height: 860px;}*/
 div.timer_cover {height: auto !important; padding-left:0;padding:10px 0;}

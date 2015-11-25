@@ -1,7 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    var time = new Date();
+    a = time.getTime( );
     $('#counter').countdown(
         {
-            timestamp: (new Date()).getTime() + 13 * 23 * 62 * 60 * 1000
+            timestamp: (new Date()).getTime() + 15 * 24 * 60 * 60 * 1000
 	});
 });
 
