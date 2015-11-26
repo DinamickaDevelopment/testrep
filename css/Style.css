@@ -77,7 +77,7 @@ body{
 
 .boxName {
     float: left;
-    width: 67px;
+    width: 100%;
     font-size: 1.143em;
     color: white;
     font-family: proximanova-regular;
@@ -185,7 +185,7 @@ body{
 }*/
 div.timer_cover {
     float: right !important;
-    background-color: rgba(0,145,199,0.6);
+    background-color: rgba(0,145,199,0.8);
 }
 
 div.form_cover {
@@ -230,7 +230,7 @@ width:30px;
     font-family:proximanovacond-light;
 }
 .countDays .position:first-child span{
-        margin-left: 13px;
+        margin-left: 0;
 }
 /*Begin MailChimp Signup Form*/
         #mc_embed_signup {
@@ -319,6 +319,19 @@ width:30px;
 #MSG{font-size:1.429em;}
 #MSGtitle{font-size:2.571em;}
 #MSGbtn{line-height:40px;background-color: #0091c7;margin:0 auto; }
+
+div.countDays span.Days {
+
+    margin-left: 0;
+    display: inline-block;
+    height: 18px;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+
 @media(min-width:320px){
 /*html,body{height: 860px;}*/
 div.timer_cover {height: auto !important; padding-left:0;padding:10px 0;}
@@ -331,8 +344,8 @@ div.form_cover{height: auto !important;}
 .countDays, .countHours, .countMinutes, .countSeconds {width: 40px;height: 62px;}
 .points {width: 19px;margin-top: 13px;}
 .position {width: 20px;height: 40px;}
-.countDays .position:first-child span{margin-left: 6px;}
-div.countDays span.Days {margin-left:11px;}
+.countDays .position:first-child span{margin-left: 0;}
+/*div.countDays span.Days {margin-left:11px;}*/
 /*counter -end*/
 .navbar-brand {height: 65px;}
 .pading-63-20{padding:0 20px}
@@ -346,8 +359,10 @@ div.countDays span.Days {margin-left:11px;}
 .countDays, .countHours, .countMinutes, .countSeconds {width: 70px;height: 138px;}
 .points {width: 34px;margin-top: 32px;}
 .position {width: 35px;height: 72px;}
-.countDays .position:first-child span{margin-left: 13px;}
-div.countDays span.Days {margin-left: 19px;}
+.countDays .position:first-child span{margin-left: 0;}
+/*div.countDays span.Days {
+    
+}*/
 .soon,.tagline{text-align:left;}
 #mc_embed_signup_scroll h2{font-size:20px}
 }
@@ -367,3 +382,114 @@ div.form_cover{height: 35% !important;}
 /*@media(min-height:801px){    
 html,body,.fullheight {height: 100%!important;}
 }*/
+
+
+/*progress bar*/
+.progressbarCover {
+    position:relative;
+    width:390px;
+    height:20px;
+
+    margin-top:53px;
+
+}
+
+.progressbarCover .progressbarCircle_for_timer {
+
+    height:20px !important;
+    width:20px !important;
+    float:left !important;
+
+    border-radius:100% !important;
+
+    position:absolute;
+    top: -5px;
+    z-index:10;
+}
+
+    .progressbarCover .progressbarCircle_for_timer .ui-progressbar-value {
+    
+        border: 0 solid white;
+        border-radius:0;
+        margin:0;
+    
+    }
+
+#progressbarCircleRight {
+
+    right:0;
+    }
+
+    #progressbarCircleRight .wholeCircle {
+     background-color:#1197c8;
+       width:10px;
+       height:10px;
+       border-radius: 100%;
+
+       position: absolute;
+       top: 5px;
+       left: 5px;
+       z-index:15;
+    }
+
+#progressbarCircleLeft {
+
+    left:0;
+    }
+
+    #progressbarCircleLeft .wholeCircle {
+       background-color:#1197c8;
+       width:10px;
+       height:10px;
+       border-radius: 100%;
+
+       position: absolute;
+       top: 5px;
+       left: 5px;
+       z-index:15;
+    }
+
+    .progressbarCover .progressbar_for_timer {
+        height:10px;
+        width:360px;
+        overflow:visible;
+        
+        border-radius:0 !important;
+
+        position:relative;
+        z-index:5;
+
+        margin: 0 auto;
+    }
+
+        .progressbarCover .progressbar_for_timer .ui-progressbar-value {
+        
+            
+        border: 0 solid white;
+        border-radius:0;
+        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        margin:0;
+        
+        }
+
+
+
+
+.progressbarCover .ui-widget-content {
+
+    background:black;
+    border:0 solid transparent;
+    
+    /*border-top-right-radius:10px !important;
+    border-bottom-right-radius:10px !important;*/
+}
+
+.progressbarCover .ui-widget-header {
+
+    background:white;
+
+}
+
