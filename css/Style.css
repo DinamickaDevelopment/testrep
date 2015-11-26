@@ -330,67 +330,9 @@ div.countDays span.Days {
 
 
 }
-
-
-@media(min-width:320px){
-/*html,body{height: 860px;}*/
-div.timer_cover {height: auto !important; padding-left:0;padding:10px 0;}
-div.form_cover{height: auto !important;}
-.mobcenter{margin:0 auto;width:90%;}
-#mc_embed_signup {margin:20px 0}
-#mc_embed_signup .button{margin:0 auto;display:block;}
-/*counter*/
-#counter {width: 240px;font-size:7px;margin:0 auto;}
-.countDays, .countHours, .countMinutes, .countSeconds {width: 40px;height: 62px;}
-.points {width: 19px;margin-top: 13px;}
-.position {width: 20px;height: 40px;}
-.countDays .position:first-child span{margin-left: 0;}
-/*div.countDays span.Days {margin-left:11px;}*/
-/*counter -end*/
-.navbar-brand {height: 65px;}
-.pading-63-20{padding:0 20px}
-.soon,.tagline{text-align:center;}
-        #mc_embed_signup_scroll h2{font-size:18px}
-}
-@media(min-width:600px){
-.mobcenter{margin:0 auto;width:65%;}
-/*counter*/
-#counter {width: 390px;font-size:14px; margin:0;}
-.countDays, .countHours, .countMinutes, .countSeconds {width: 70px;height: 138px;}
-.points {width: 34px;margin-top: 32px;}
-.position {width: 35px;height: 72px;}
-.countDays .position:first-child span{margin-left: 0;}
-/*div.countDays span.Days {
-    
-}*/
-.soon,.tagline{text-align:left;}
-#mc_embed_signup_scroll h2{font-size:20px}
-}
-@media(min-width:993px){
-    /*html,body{height: 100%;}*/
-div.timer_cover {height: 65% !important;padding:62px 0 0 7.7%;}
-div.form_cover{height: 35% !important;}
-.mobcenter{margin:0;width:auto;}
-#mc_embed_signup {margin:62px 0 0 0;}
-#mc_embed_signup .button{margin:0 18px;display:inline-block} 
-.navbar-brand {height: 120px;}
-
-.pading-63-20{padding:0 63px;}
-
-}
-
-/*@media(min-height:801px){    
-html,body,.fullheight {height: 100%!important;}
-}*/
-
-
-/*progress bar*/
 .progressbarCover {
     position:relative;
-    width:390px;
     height:20px;
-
-    margin-top:53px;
 
 }
 
@@ -451,7 +393,6 @@ html,body,.fullheight {height: 100%!important;}
 
     .progressbarCover .progressbar_for_timer {
         height:10px;
-        width:360px;
         overflow:visible;
         
         border-radius:0 !important;
@@ -492,4 +433,64 @@ html,body,.fullheight {height: 100%!important;}
     background:white;
 
 }
+
+@media(min-width:320px){
+/*html,body{height: 860px;}*/
+div.timer_cover {height: auto !important; padding-left:0;padding:10px 0;}
+div.form_cover{height: auto !important;}
+.mobcenter{margin:0 auto;width:90%;}
+#mc_embed_signup {margin:20px 0}
+#mc_embed_signup .button{margin:0 auto;display:block;}
+/*counter*/
+#counter {width: 218px;font-size:7px;margin:0 auto;}
+.countDays, .countHours, .countMinutes, .countSeconds {width: 40px;height: 62px;}
+.points {width: 19px;margin-top: 13px;}
+.position {width: 20px;height: 40px;}
+.countDays .position:first-child span{margin-left: 0;}
+/*div.countDays span.Days {margin-left:11px;}*/
+/*counter -end*/
+.navbar-brand {height: 65px;}
+.pading-63-20{padding:0 20px}
+.soon,.tagline{text-align:center;}
+        #mc_embed_signup_scroll h2{font-size:18px}
+        .progressbarCover{width:240px;margin-top:0;margin:auto}
+        .progressbarCover .progressbar_for_timer{width:210px;}
+}
+@media(min-width:600px){
+.mobcenter{margin:0 auto;width:65%;}
+/*counter*/
+#counter {width: 390px;font-size:14px; margin:0;}
+.countDays, .countHours, .countMinutes, .countSeconds {width: 70px;height: 138px;}
+.points {width: 34px;margin-top: 32px;}
+.position {width: 35px;height: 72px;}
+.countDays .position:first-child span{margin-left: 0;}
+/*div.countDays span.Days {
+    
+}*/
+.soon,.tagline{text-align:left;}
+#mc_embed_signup_scroll h2{font-size:20px}
+.progressbarCover{width:390px;margin:0;margin-top:53px;}
+.progressbarCover .progressbar_for_timer{width:360px;}
+}
+@media(min-width:993px){
+    /*html,body{height: 100%;}*/
+div.timer_cover {height: 65% !important;padding:62px 0 0 7.7%;}
+div.form_cover{height: 35% !important;}
+.mobcenter{margin:0;width:auto;}
+#mc_embed_signup {margin:62px 0 0 0;}
+#mc_embed_signup .button{margin:0 18px;display:inline-block} 
+.navbar-brand {height: 120px;}
+
+.pading-63-20{padding:0 63px;}
+
+
+}
+
+/*@media(min-height:801px){    
+html,body,.fullheight {height: 100%!important;}
+}*/
+
+
+/*progress bar*/
+
 

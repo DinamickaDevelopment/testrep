@@ -38,16 +38,15 @@ $(document).ready(function () {
         max: 20
     });
 
-    //UpDate Progress bar
-    var oneTickPeriod = Math.floor( full_period / 390); // 390 is a progress bar width
+    //UpDate Progress bar 
+    var barwidth = (window.screen.width < 600) ? 240 : 390;
+    var oneTickPeriod = Math.floor(full_period / barwidth); // 390 is a progress bar width
 
     var tickNumber = 0;
     function MoveBar()
     {
-        var elapsed_time =  new Date() - start_time;
-
+        var elapsed_time = new Date() - start_time;
         tickNumber = elapsed_time / oneTickPeriod;
-                
         SetValueforBar(tickNumber);
     }
     setInterval(MoveBar, 100);
@@ -58,16 +57,16 @@ $(document).ready(function () {
         if (number <= 20 ) {
             progressbarCircleLeft.progressbar("option", "value", number);
         }
-        else if (number > 20 && number < 370) {
+        else if (number > 20 && number < (barwidth-20)) {
             progressbarCircleLeft.progressbar("option", "value", number);
             number = number + 5 - 20;
             progressbar.progressbar("option", "value", number);
         }
-        else if (number > 370) {
+        else if (number > (barwidth - 20)) {
             progressbarCircleLeft.progressbar("option", "value", number);
             progressbar.progressbar("option", "value", number);
 
-            number = number - 370;
+            number = number - (barwidth - 20);
 
             progressbarCircleRight.progressbar("option", "value", number);
         }
