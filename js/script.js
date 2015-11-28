@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     var current_time = new Date().getTime();
 
-    var finish_time = new Date("December 1, 2015 22:00:00").getTime();
+    var finish_time = new Date("December 5, 2015 22:00:00").getTime();
         
     var remain_time = finish_time - current_time;
 
