@@ -523,7 +523,7 @@ div.form_cover{height: auto !important;}
         .progressbarCover{width:240px;margin-top:0;margin:auto}
         .progressbarCover .progressbar_for_timer{width:210px;}
 }
-@media(min-width:600px){
+@media(min-width:796px){
 .mobcenter{margin:0 auto;width:65%;}
 /*counter*/
 #counter {width: 390px;font-size:14px; margin:0;}
