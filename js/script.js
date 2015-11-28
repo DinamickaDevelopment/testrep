@@ -73,5 +73,23 @@ $(document).ready(function () {
         
     }
 
+
+    //Redirect to the main page
+    var Buttons_array = document.getElementsByClassName("congratulation_button_text");
+
+    for (var i = 0; i < Buttons_array.length; i++) {
+
+        Buttons_array[i].onclick = function () {
+
+            window.location = "http://dinamickadevelopment.github.io/testrep/";
+
+
+        }
+
+    }
+
+
+    
+
 });
 
