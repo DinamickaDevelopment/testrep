@@ -39,8 +39,8 @@ $(document).ready(function () {
     });
 
     //UpDate Progress bar 
-    var barwidth = (window.screen.width < 600) ? 240 : 390;
-    var oneTickPeriod = Math.floor(full_period / barwidth); // 390 is a progress bar width
+    var barwidth = (window.screen.width < 600) ? 240 : 380;
+    var oneTickPeriod = Math.floor(full_period / barwidth); // 380 is a progress bar width
 
     var tickNumber = 0;
     function MoveBar()
@@ -53,23 +53,25 @@ $(document).ready(function () {
 
     //Set a new value for progress bar 
     function SetValueforBar(number) {
+        progressbar.progressbar("option", "value", number);
 
-        if (number <= 20 ) {
-            progressbarCircleLeft.progressbar("option", "value", number);
-        }
-        else if (number > 20 && number < (barwidth-20)) {
-            progressbarCircleLeft.progressbar("option", "value", number);
-            number = number + 5 - 20;
-            progressbar.progressbar("option", "value", number);
-        }
-        else if (number > (barwidth - 20)) {
-            progressbarCircleLeft.progressbar("option", "value", number);
-            progressbar.progressbar("option", "value", number);
 
-            number = number - (barwidth - 20);
+        //if (number <= 20 ) {
+        //    progressbarCircleLeft.progressbar("option", "value", number);
+        //}
+        //else if (number > 20 && number < (barwidth-20)) {
+        //    progressbarCircleLeft.progressbar("option", "value", number);
+        //    number = number + 5 - 20;
+        //    progressbar.progressbar("option", "value", number);
+        //}
+        //else if (number > (barwidth - 20)) {
+        //    progressbarCircleLeft.progressbar("option", "value", number);
+        //    progressbar.progressbar("option", "value", number);
 
-            progressbarCircleRight.progressbar("option", "value", number);
-        }
+        //    number = number - (barwidth - 20);
+
+        //    progressbarCircleRight.progressbar("option", "value", number);
+        //}
         
     }
 
