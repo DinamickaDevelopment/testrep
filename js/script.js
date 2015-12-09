@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-    var start_time = new Date("November 14 , 2015 22:00:00").getTime();
+    var start_time = new Date("December 1, 2015 09:00:00").getTime();
 
     var current_time = new Date().getTime();
 
-    var finish_time = new Date("December 5, 2015 22:00:00").getTime();
+    var finish_time = new Date("March 1, 2016 09:00:00").getTime();
         
     var remain_time = finish_time - current_time;
 
@@ -81,7 +81,7 @@ $(document).ready(function () {
 
         Buttons_array[i].onclick = function () {
 
-            window.location = "http://dinamickadevelopment.github.io/testrep/";
+            window.location = "http://city.fuseforex.com/";
 
 
         }
