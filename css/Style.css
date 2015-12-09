@@ -29,6 +29,7 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    color:white;
 }
 
 .fullheight {
@@ -321,7 +322,7 @@ svg.twitter {
 
 #mc_embed_signup .mc-field-group input {
     /*border-radius: 8px;*/
-    width: 90%;
+    /*width: 90%;*/
     margin-left: 9%;
     display: block;
     width: 83%;
